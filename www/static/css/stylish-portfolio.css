@@ -237,3 +237,30 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.sign a{
+    cursor: pointer;
+}
+
+.sign form{
+    display: none;
+}
+
+.sign form input{
+    margin-left: 20px;
+    display: list-item;
+    width: 210px;
+}
+
+.sign form input:not(:last-child){
+    text-indent: 10px;
+}
+
+.role{
+    margin-left: 20px;
+    display: list-item;
+    width: 210px;
+    border-radius:0;
+    height: 45px;
+    color: #999;
+}

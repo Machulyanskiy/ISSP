@@ -55,8 +55,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li>
                 <a href="#portfolio">Portfolio</a>
             </li>
-            <li>
+            <!--<li>
                 <a href="#contact">Contact</a>
+            </li>-->
+            <li class="sign">
+                <a>Увійти</a>
+                <form id="sign-in">
+                    <input type="email" name="email"    placeholder="Емейл" maxlength="100" required>
+                    <input type="text" name="pass"    placeholder="Пароль" maxlength="20" required>
+                    <input type="submit" value="Підтвердити">
+                </form>
+            </li>
+            <li class="sign">
+                <a>Зареєструватися</a>
+                <form id="sign-up">
+                    <input type="text" name="full_name" placeholder="ПІБ" maxlength="100" required>
+                    <input type="email" name="email"    placeholder="Емейл" maxlength="100" required>
+                    <input type="text" name="pass"    placeholder="Пароль" maxlength="20" required>
+                    <input type="text" name="tel"    placeholder="Телефон" maxlength="20" required>
+                    <input type="text" name="company"    placeholder="Місце роботи/навчання" maxlength="20" required>
+                    <select class="form-control role">
+                        <option value="4">Студент</option>
+                        <option value="3">Роботодавець</option>
+                    </select>
+                    <input type="hidden" name="role">
+                    <input type="submit" value="Підтвердити">
+                </form>
             </li>
         </ul>
     </nav>
@@ -224,14 +248,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </aside>
 
     <!-- Map -->
-    <section id="contact" class="map">
+    <!--<section id="contact" class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
         <br />
         <small>
             <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
         </small>
         </iframe>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer>
@@ -272,36 +296,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="static/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
+    <script src="static/js/main_page.js"></script>
 
 </body>
 
