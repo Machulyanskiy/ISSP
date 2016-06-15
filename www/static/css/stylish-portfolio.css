@@ -17,6 +17,7 @@ body {
 }
 
 .text-vertical-center {
+    margin-top: 30px;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -185,7 +186,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/entrepreneurship.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -242,7 +243,7 @@ footer {
     cursor: pointer;
 }
 
-.sign form{
+.sign form, .user, .sign_out, .employer, .moder, .admin, .graphic{
     display: none;
 }
 
@@ -263,4 +264,155 @@ footer {
     border-radius:0;
     height: 45px;
     color: #999;
+}
+
+.user{
+    color: #999;
+}
+
+.test-info{
+    padding: 15px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-top: 20px;
+}
+
+#dataTables thead, .block{
+    font-size: 18px;
+}
+
+.input{
+    text-align: center;
+    vertical-align: middle!important;
+}
+
+#dataTables thead:not(:first-child){
+    margin-top: 10px;
+}
+
+.col-1, .col-2, .col-3, .col-4{
+    cursor: pointer;
+}
+
+.submit{
+    float: right;
+}
+
+.results{
+    display: none;
+    padding: 20px;
+}
+
+.res-block {
+    display: inline-block;
+    width: 60%;
+}
+.res-block h4{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.user-progress {
+    margin-top: 10px;
+    width: 60%;
+}
+
+.comp-lvl-list{
+    list-style: none;
+}
+
+.find-header{
+    margin-right: 15px;
+    margin-left: 55px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.find-spec-sub{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.req-list{
+    padding: 0;
+}
+
+.comp-lvl{
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+}
+
+.comp-lvl-input{
+    width: 100px;
+}
+
+.save-vac{
+    margin-top:30px;
+    padding: 0;
+}
+
+.name-req{
+    width: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.lvl-req{
+    width: 40%;
+}
+
+.vacancy-list{
+    width: 100%;
+    list-style: none;
+}
+
+.vacancy-list li{
+    width: 100%;
+    padding:10px;
+}
+
+.vacancy-list li span{
+    margin-right: 10px;
+}
+
+.vac-numb{
+    width: 20px;
+}
+
+.vac-name{
+    width: 40%;
+}
+
+.fa-pencil-square-o, .fa-search, .fa-plus-square{
+    opacity: .6;
+}
+
+.fa-pencil-square-o:hover, .fa-search:hover, .fa-plus-square:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.icon{
+    width: 20px;
+}
+
+.own-req-title{
+    margin-top: 0px!important;
+}
+
+.add-vac, .vac-req, .vac-list, .save-new-vac, .vac-res, .sphere-quest{
+    display: none;
+}
+
+.own-req{
+    margin-bottom: 20px;
+}
+
+.vac-el, .vacancy tr, .first-sphere{
+    cursor: pointer;
 }
